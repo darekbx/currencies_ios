@@ -17,8 +17,17 @@ class CurrenciesViewModel: ObservableObject {
         }
     }
     
+    func refreshSync() {
+        Task.init {
+            await fetchData()
+        }
+    }
+    
     func fetchData() async {
         do {
+            currencies = nil
+            try await Task.sleep(nanoseconds: 1_000_000_000)
+            
             guard let url = URL(string: "https://api.nbp.pl/api/exchangerates/tables/A/?format=json")
             else { fatalError("Invalid url!") }
             

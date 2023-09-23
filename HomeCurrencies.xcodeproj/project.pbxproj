@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048B22402ABF0C2E007600A5 /* CurrenciesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B223F2ABF0C2E007600A5 /* CurrenciesList.swift */; };
 		E58D63ED2ABE0A6D004721CA /* HomeCurrenciesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D63EC2ABE0A6D004721CA /* HomeCurrenciesApp.swift */; };
 		E58D63EF2ABE0A6D004721CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D63EE2ABE0A6D004721CA /* ContentView.swift */; };
 		E58D63F12ABE0A6F004721CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58D63F02ABE0A6F004721CA /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048B223F2ABF0C2E007600A5 /* CurrenciesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesList.swift; sourceTree = "<group>"; };
 		E58D63E92ABE0A6D004721CA /* HomeCurrencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeCurrencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D63EC2ABE0A6D004721CA /* HomeCurrenciesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCurrenciesApp.swift; sourceTree = "<group>"; };
 		E58D63EE2ABE0A6D004721CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				E58D64012ABE140E004721CA /* RateView.swift */,
 				E58D64032ABEEB7B004721CA /* DetailsView.swift */,
+				048B223F2ABF0C2E007600A5 /* CurrenciesList.swift */,
 			);
 			path = Currencies;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048B22402ABF0C2E007600A5 /* CurrenciesList.swift in Sources */,
 				E58D63EF2ABE0A6D004721CA /* ContentView.swift in Sources */,
 				E58D64022ABE140E004721CA /* RateView.swift in Sources */,
 				E58D63FD2ABE0ABD004721CA /* Rates.swift in Sources */,
@@ -320,6 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +354,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

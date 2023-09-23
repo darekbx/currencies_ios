@@ -31,9 +31,11 @@ struct RateView: View {
     }
 }
 
-#Preview {
-    List {
-        RateView(rate: .default)
-        RateView(rate: .default)
+struct RateView_Previews: PreviewProvider {
+    static var previews: some View {
+        List {
+            RateView(rate: .default)
+            RateView(rate: .default)
+        }
     }
 }

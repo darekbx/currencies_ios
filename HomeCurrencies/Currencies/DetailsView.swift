@@ -23,6 +23,8 @@ struct DetailsView: View {
     }
 }
 
-#Preview {
-    DetailsView(rate: .default)
+struct DetailsView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailsView(rate: .default)
+    }
 }

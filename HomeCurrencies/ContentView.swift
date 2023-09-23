@@ -13,27 +13,35 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
+            VStack(spacing: 5) {
                 if let data = viewModel.currencies {
-                    List {
+                    
+                    Text("Currencies")
+                        .font(.largeTitle)
+                
+                    HStack {
                         TextField("Filter", text: $filter)
-                        ForEach(data.rates.filter { filter.isEmpty || $0.currency.contains(filter.lowercased()) }, id: \.code) { rate in
-                            NavigationLink {
-                                DetailsView(rate: rate)
-                            } label: {
-                                RateView(rate: rate)
-                            }
+                        Button {
+                            viewModel.refreshSync()
+                        } label: {
+                            Image(systemName: "arrow.clockwise.circle.fill")
                         }
                     }
+                    .padding()
+                    
+                    CurrenciesList(rates: data.rates.filter {
+                        filter.isEmpty || $0.currency.contains(filter.lowercased())
+                    })
                 } else {
-                    Text("Failed...")
+                    ProgressView("Loading...")
                 }
             }
-            .padding()
         }
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
