@@ -16,6 +16,9 @@
 		E58D63FF2ABE0B9E004721CA /* CurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D63FE2ABE0B9E004721CA /* CurrenciesViewModel.swift */; };
 		E58D64022ABE140E004721CA /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D64012ABE140E004721CA /* RateView.swift */; };
 		E58D64042ABEEB7B004721CA /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D64032ABEEB7B004721CA /* DetailsView.swift */; };
+		E58D64072AC02DFD004721CA /* RateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E58D64052AC02DFD004721CA /* RateModel.xcdatamodeld */; };
+		E58D640A2AC02F47004721CA /* PersistedRate+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D64082AC02F47004721CA /* PersistedRate+CoreDataClass.swift */; };
+		E58D640B2AC02F47004721CA /* PersistedRate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D64092AC02F47004721CA /* PersistedRate+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		E58D63FE2ABE0B9E004721CA /* CurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModel.swift; sourceTree = "<group>"; };
 		E58D64012ABE140E004721CA /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
 		E58D64032ABEEB7B004721CA /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		E58D64062AC02DFD004721CA /* RateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RateModel.xcdatamodel; sourceTree = "<group>"; };
+		E58D64082AC02F47004721CA /* PersistedRate+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistedRate+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E58D64092AC02F47004721CA /* PersistedRate+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistedRate+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,8 @@
 		E58D63E02ABE0A6D004721CA = {
 			isa = PBXGroup;
 			children = (
+				E58D64082AC02F47004721CA /* PersistedRate+CoreDataClass.swift */,
+				E58D64092AC02F47004721CA /* PersistedRate+CoreDataProperties.swift */,
 				E58D63EB2ABE0A6D004721CA /* HomeCurrencies */,
 				E58D63EA2ABE0A6D004721CA /* Products */,
 			);
@@ -68,6 +76,7 @@
 				E58D63EE2ABE0A6D004721CA /* ContentView.swift */,
 				E58D63F02ABE0A6F004721CA /* Assets.xcassets */,
 				E58D63F22ABE0A6F004721CA /* Preview Content */,
+				E58D64052AC02DFD004721CA /* RateModel.xcdatamodeld */,
 			);
 			path = HomeCurrencies;
 			sourceTree = "<group>";
@@ -177,12 +186,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				048B22402ABF0C2E007600A5 /* CurrenciesList.swift in Sources */,
+				E58D640B2AC02F47004721CA /* PersistedRate+CoreDataProperties.swift in Sources */,
 				E58D63EF2ABE0A6D004721CA /* ContentView.swift in Sources */,
 				E58D64022ABE140E004721CA /* RateView.swift in Sources */,
+				E58D64072AC02DFD004721CA /* RateModel.xcdatamodeld in Sources */,
 				E58D63FD2ABE0ABD004721CA /* Rates.swift in Sources */,
 				E58D63ED2ABE0A6D004721CA /* HomeCurrenciesApp.swift in Sources */,
 				E58D63FF2ABE0B9E004721CA /* CurrenciesViewModel.swift in Sources */,
 				E58D64042ABEEB7B004721CA /* DetailsView.swift in Sources */,
+				E58D640A2AC02F47004721CA /* PersistedRate+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E58D64052AC02DFD004721CA /* RateModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E58D64062AC02DFD004721CA /* RateModel.xcdatamodel */,
+			);
+			currentVersion = E58D64062AC02DFD004721CA /* RateModel.xcdatamodel */;
+			path = RateModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E58D63E12ABE0A6D004721CA /* Project object */;
 }

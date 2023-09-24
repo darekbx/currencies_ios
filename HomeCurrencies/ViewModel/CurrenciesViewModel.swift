@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+import CoreData
 
 class CurrenciesViewModel: ObservableObject {
     
